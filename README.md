@@ -27,3 +27,34 @@ The goal is to build an Emotion Detection web application using the Watson NLP (
 
 ### **Task 4 — Packaged as EmotionDetection Package**
 Folder structure:# emotion-detector-project
+
+### **Task 5 — Unit Testing**
+- Added `test_emotion_detection.py`
+- Includes 3 unit tests:
+  - Positive emotion
+  - Negative emotion
+  - Neutral emotion
+
+### **Task 6 — Flask Web Deployment**
+- Implemented Flask app in `server.py`
+- Endpoint `/emotionDetector` connects frontend to backend
+- Successfully deployed on **http://localhost:5000**
+
+### **Task 7 — Error Handling**
+- Handles:
+  - Blank input  
+  - Invalid text (gibberish)  
+  - API failures  
+- Returns `Invalid input! Try again.`
+
+### **Task 8 — Static Code Analysis**
+- Pylint executed on server.py
+- Score improved based on suggestions
+
+---
+
+## 💻 How to Run This Project
+
+### **1. Install dependencies**
+```bash
+python3.11 -m pip install requests flask pylint
